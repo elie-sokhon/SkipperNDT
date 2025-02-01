@@ -8,7 +8,8 @@ WORKDIR /code
 COPY . .
 
 # Install dependencies
-RUN pip install --no-cache-dir django djangorestframework psycopg2 numpy pandas django-cors-headers
+RUN pip install --no-cache-dir django djangorestframework psycopg2 numpy pandas django-cors-headers python-dotenv
+
 
 # Expose backend port
 EXPOSE 8000
